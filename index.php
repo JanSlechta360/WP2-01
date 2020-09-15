@@ -5,19 +5,19 @@ $submit = filter_input(INPUT_POST, "submit");
 $types = array("osobní","nákladní","autobus","karavan","trolejbus")
 
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+ <!DOCTYPE html>
+               <html lang="en">
+          <head>
+               <meta charset="UTF-8">
+               <meta name="viewport" content="width=device-width, initial-scale=1.0">
+               <title>Document</title>
+          </head>
 <body>
-<?php
-if (isset ($submit)) { ?>
-    Typ:<?= $auto ?> <br>
-    SPZ:<?= $spz ?>
-    <?php
+     <?php
+         if (isset ($submit)) { ?>
+                Typ:<?= $auto ?> <br>
+                SPZ:<?= $spz ?>
+     <?php
 }    else {  ?>   
     <form action="index.php" method="post">
       Typ vozidla:<select name="auta" id="auta">
